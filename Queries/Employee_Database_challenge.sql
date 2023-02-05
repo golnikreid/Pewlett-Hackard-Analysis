@@ -1,3 +1,5 @@
+-- Deliverable 1
+
 select emp_no, first_name, last_name from Employees
 
 select title, from_date, to_date from Titles
@@ -30,6 +32,35 @@ FROM unique_titles
 GROUP BY title
 
 select * from retiring_titles
+
+
+
+-- Deliverable 2
+select * from employees
+select * from dept_emp
+select * from titles
+
+SELECT DISTINCT ON (e.emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, de.from_date, de.to_date, ti.title
+INTO mentorship_eligibility
+FROM Employees e
+INNER JOIN dept_emp de ON e.emp_no = de.emp_no
+INNER JOIN titles ti ON e.emp_no = ti.emp_no
+WHERE (de.to_date = '9999-01-01')
+AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY emp_no
+
+select * from mentorship_eligibility
+
+
+
+
+
+
+
+
+
+
+
 
 
 

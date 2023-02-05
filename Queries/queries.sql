@@ -180,7 +180,7 @@ ON (de.dept_no = d.dept_no)
 where (de.dept_no = 'd007' or de.dept_no = 'd005')
 
 
-
+select * from salaries
 
 
 

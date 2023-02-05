@@ -22,6 +22,7 @@ The purpose of this analysis is to determine the number of retiring employees pe
  - Unique Titles
   ![unique_titles](Data/unique_titles.png)
  - Retiring Titles
+
   ![retiring_titles](Data/retiring_titles.png)
  - Mentorship Eligibility
  ![mentorship_eligibility](Data/mentorship_eligibility.png)
